@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Align(
-              alignment: Alignment.bottomCenter,
+              // alignment: Alignment.center,
               child: Image.asset('assets/chat.jpg', width: 300),
             ),
             Container(
