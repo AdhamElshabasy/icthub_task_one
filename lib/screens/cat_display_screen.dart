@@ -51,19 +51,20 @@ class CatDisplayScreen extends StatelessWidget {
         // The top bar in the app
         appBar: AppBar(
           centerTitle: true,
-          title: const Text("Task One"),
+          title: const Text(
+            "Task One",
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
         ),
         body: Center(
           child: Text(
             category,
             style: const TextStyle(
-              fontSize: 72.0, // Adjust the font size as needed
-              fontFamily: 'PermanentMarker'
-            ),
+                fontSize: 72.0, // Adjust the font size as needed
+                fontFamily: 'PermanentMarker'),
           ),
         ),
       ),
     );
   }
 }
-

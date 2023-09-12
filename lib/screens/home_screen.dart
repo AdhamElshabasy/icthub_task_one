@@ -23,7 +23,10 @@ class HomeScreen extends StatelessWidget {
         // The top bar in the app
         appBar: AppBar(
           centerTitle: true,
-          title: const Text("Task One"),
+          title: const Text(
+            "Task One",
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
         ),
 
         // The body of the app
