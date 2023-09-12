@@ -29,8 +29,19 @@ After creating the second screen I created a container in a class that can be re
 I found that I can do the whole app with stateless widgets but I created a second version of the third screen **(cat_display_screen.dart)** in both statless and stateful widgets and commented out one of them.
 
 **Part two Screenshots**
-![First Screenshot](./screenshots/screenshot_2.png)
-![First Screenshot](./screenshots/screenshot_3.png)
+![Second Screenshot](./screenshots/screenshot_2.png)
+![Third Screenshot](./screenshots/screenshot_3.png)
+
+---
+
+### *[ Testing API With Flutter ]*
+
+Using http dart library I added a list with 10 users that are not stored locally but fetched from a [JSON database](https://jsonplaceholder.typicode.com/users) when the users clicks on the API List screen.
+
+Creating multiple dart files, one of them is to parse the data fetched and convert it to a list (file copied not written not written from scratch) and another file to do the request itself.
+
+**API List Screenshot**
+![Fourth Screenshot](./screenshots/screenshot_4.png)
 
 ---
 
