@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:task_one/widgets/containers.dart';
 
+//-------------------------------------------------------------------------//
+
 // List of Names of items to be displayed in this screen
 final List<String> catNames = [
   'Idea',
@@ -21,12 +23,16 @@ final List<String> iconNames = [
   'assets/cars_icon.png',
 ];
 
+//-------------------------------------------------------------------------//
+
 // Function to navigate to a screen by class name
 void navigateToScreen(BuildContext context, Widget screen) {
   Navigator.of(context).push(
     MaterialPageRoute(builder: (context) => screen),
   );
 }
+
+//-------------------------------------------------------------------------//
 
 // List Screen Classes (Stateful)
 class ListScreen extends StatelessWidget {
@@ -42,7 +48,7 @@ class ListScreen extends StatelessWidget {
         appBar: AppBar(
           centerTitle: true,
           title: const Text(
-            "Task One",
+            "Static List Screen",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),

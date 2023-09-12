@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:task_one/screens/home_screen.dart';
 
+//-------------------------------------------------------------------------//
+
 // Main Function to run the app
 void main() {
   runApp(const MyApp());

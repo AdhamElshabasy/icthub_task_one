@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+//-------------------------------------------------------------------------//
+
 // The Blue button used in the home screen
 class HomeScreenButton extends StatelessWidget {
   // Variables to store the parameters for the button

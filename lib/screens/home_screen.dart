@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:task_one/widgets/buttons.dart';
 import 'package:task_one/screens/list_screen.dart';
+import 'package:task_one/screens/api_list_screen.dart';
+
+//-------------------------------------------------------------------------//
 
 // Function to navigate to a screen by class name
 void navigateToScreen(BuildContext context, Widget screen) {
@@ -8,6 +11,8 @@ void navigateToScreen(BuildContext context, Widget screen) {
     MaterialPageRoute(builder: (context) => screen),
   );
 }
+
+//-------------------------------------------------------------------------//
 
 // Home Screen Class
 class HomeScreen extends StatelessWidget {
@@ -24,7 +29,7 @@ class HomeScreen extends StatelessWidget {
         appBar: AppBar(
           centerTitle: true,
           title: const Text(
-            "Task One",
+            "Home Screen",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
@@ -66,15 +71,15 @@ class HomeScreen extends StatelessWidget {
                         children: [
                           HomeScreenButton(
                             buttonAction: () {
-                              navigateToScreen(context, const ListScreen());
+                              navigateToScreen(context, const ApiListScreen());
                             },
-                            buttonText: 'Sign In',
+                            buttonText: 'Sign In (API)',
                           ),
                           HomeScreenButton(
                             buttonAction: () {
-                              navigateToScreen(context, const ListScreen());
+                              navigateToScreen(context, const ApiListScreen());
                             },
-                            buttonText: 'Sign Up',
+                            buttonText: 'Sign Up (API)',
                           ),
                         ],
                       ),

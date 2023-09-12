@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:task_one/screens/cat_display_screen.dart';
+import 'package:task_one/screens/display_screen.dart';
+
+//-------------------------------------------------------------------------//
 
 // Function to navigate to a screen by class name
 void navigateToScreen(BuildContext context, Widget screen) {
@@ -17,6 +19,8 @@ Color hexToColor(String hexColor) {
   return Color(int.parse('0xFF$hexColor'));
 }
 
+//-------------------------------------------------------------------------//
+
 // The Container used in the list screen
 class ListContainer extends StatelessWidget {
   // Variables to store the parameters
@@ -29,7 +33,9 @@ class ListContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: (){navigateToScreen(context, CatDisplayScreen(category: catName));},
+      onTap: () {
+        navigateToScreen(context, CatDisplayScreen(category: catName));
+      },
       child: Container(
         padding: const EdgeInsets.all(16.0),
         width: MediaQuery.sizeOf(context).width - 50,
@@ -59,6 +65,72 @@ class ListContainer extends StatelessWidget {
               const Text(
                 'Tap to select',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+              )
+            ],
+          ),
+          const Expanded(
+            child: Align(
+              alignment: Alignment.centerRight,
+              child: Icon(
+                Icons.keyboard_arrow_right,
+                color: Colors.black,
+                size: 40,
+              ),
+            ),
+          )
+        ]),
+      ),
+    );
+  }
+}
+
+// The Container used in the API list screen
+class ApiListContainer extends StatelessWidget {
+  final String id;
+  final String name;
+  final String email;
+
+  const ApiListContainer(
+      {super.key, required this.id, required this.name, required this.email});
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () {
+        navigateToScreen(context, CatDisplayScreen(category: "$name data"));
+      },
+      child: Container(
+        padding: const EdgeInsets.all(16.0),
+        width: MediaQuery.sizeOf(context).width - 50,
+        height: 100,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15.0),
+          color: hexToColor("#ededed"),
+        ),
+        child: Row(children: [
+          Text("$id -",
+              style: const TextStyle(
+                  color: Colors.black,
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold)),
+          const SizedBox(
+            width: 15,
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                name,
+                style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
+                    fontFamily: 'Righteous'),
+              ),
+              Text(
+                email,
+                style:
+                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
               )
             ],
           ),

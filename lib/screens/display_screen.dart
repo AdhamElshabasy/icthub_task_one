@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+//-------------------------------------------------------------------------//
+
 // // Stateful Widget for the Category display screen
 // class CatDisplayScreen extends StatefulWidget {
 //   final String category;
@@ -52,23 +54,18 @@ class CatDisplayScreen extends StatelessWidget {
         appBar: AppBar(
           centerTitle: true,
           title: const Text(
-            "Task One",
+            "Display Screen",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
         body: Center(
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Text(
-              category,
-              style: const TextStyle(
-                  fontSize: 72.0, // Adjust the font size as needed
-                  fontFamily: 'PermanentMarker'),
-            ),
-            const Icon(
-              Icons.search_off_outlined,
-              size: 80,
-            )
-          ]),
+          child: Text(
+            category,
+            style: const TextStyle(
+                fontSize: 48.0, // Adjust the font size as needed
+                fontFamily: 'PermanentMarker'),
+            textAlign: TextAlign.center,
+          ),
         ),
       ),
     );
