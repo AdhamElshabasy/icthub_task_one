@@ -57,12 +57,18 @@ class CatDisplayScreen extends StatelessWidget {
           ),
         ),
         body: Center(
-          child: Text(
-            category,
-            style: const TextStyle(
-                fontSize: 72.0, // Adjust the font size as needed
-                fontFamily: 'PermanentMarker'),
-          ),
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            Text(
+              category,
+              style: const TextStyle(
+                  fontSize: 72.0, // Adjust the font size as needed
+                  fontFamily: 'PermanentMarker'),
+            ),
+            const Icon(
+              Icons.search_off_outlined,
+              size: 80,
+            )
+          ]),
         ),
       ),
     );
