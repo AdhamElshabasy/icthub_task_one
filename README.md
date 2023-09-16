@@ -4,7 +4,7 @@ A flutter project created as a task for the ICTHUB Flutter Course
 
 ## Task Details
 
-### *[ Part one ]*
+### *[ Task 1 ]*
 
 First part of the task was to create a landing page using widgets like text, buttons and adding an image. 
 
@@ -20,7 +20,7 @@ I used widgets beside the basic ones such as:
 
 ---
 
-### *[ Part Two ]*
+### *[ Task 2 ]*
 
 Second part of the task to create a new screen with a list using ListView to choose a category and then get directed to a page that displays the name of that category
 
