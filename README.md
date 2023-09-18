@@ -15,7 +15,7 @@ I used widgets beside the basic ones such as:
 - Container
 - Align
 
-**Part one Screenshot**
+**Task one Screenshot**
 ![First Screenshot](./screenshots/screenshot_1.png)
 
 ---
@@ -28,7 +28,7 @@ After creating the second screen I created a container in a class that can be re
 
 I found that I can do the whole app with stateless widgets but I created a second version of the third screen **(cat_display_screen.dart)** in both statless and stateful widgets and commented out one of them.
 
-**Part two Screenshots**
+**Task two Screenshots**
 ![Second Screenshot](./screenshots/screenshot_2.png)
 ![Third Screenshot](./screenshots/screenshot_3.png)
 
